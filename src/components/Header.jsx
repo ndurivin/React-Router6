@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div className="container">
           <Link className="navbar-brand" to="/">
             ReactApp
@@ -18,8 +18,11 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav justify-content-end">
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul className="navbar-nav">
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -27,6 +30,15 @@ const Header = () => {
                   to="/about"
                 >
                   About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/albums"
+                >
+                  Albums
                 </Link>
               </li>
             </ul>

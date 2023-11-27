@@ -36,9 +36,9 @@ const Header = () => {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="/albums"
+                  to="/users"
                 >
-                  Albums
+                  Users
                 </Link>
               </li>
             </ul>
